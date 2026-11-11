@@ -79,8 +79,8 @@
 
     .video-grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 35px 30px;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 48px;
     }
 
     .video-item h3 {
@@ -93,7 +93,7 @@
       position: relative;
       width: 100%;
       aspect-ratio: 16 / 9;
-      min-height: 200px;
+      min-height: 0;
       overflow: hidden;
       border-radius: 8px;
       background: #e9edf2;
@@ -155,10 +155,6 @@
     }
 
     @media (max-width: 850px) {
-      .video-grid {
-        grid-template-columns: 1fr;
-      }
-
       .page-header {
         padding: 45px 0 35px;
       }
@@ -191,7 +187,7 @@
   <section id="demonstrations">
     <div class="container">
 
-      <h2>Video Demonstrations</h2>
+      <h2>Supplemental Video Demonstrations</h2>
 
       <div class="video-grid">
 
