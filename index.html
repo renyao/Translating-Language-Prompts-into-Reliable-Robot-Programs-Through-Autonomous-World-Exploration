@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Autonomous World Exploration</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #202530;
+      background: #f5f7fa;
+      line-height: 1.65;
+    }
+    header {
+      padding: 70px 24px;
+      text-align: center;
+      color: white;
+      background: #142d4e;
+    }
+    h1 {
+      max-width: 1000px;
+      margin: 0 auto 20px;
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.2;
+    }
+    header p { font-size: 22px; }
+    main { max-width: 1100px; margin: auto; padding: 36px 24px; }
+    section { margin-bottom: 48px; }
+    h2 { font-size: 28px; }
+    .videos {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 28px;
+    }
+    iframe {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      min-height: 200px;
+      border: 0;
+      border-radius: 10px;
+    }
+    a { color: #145da0; }
+    footer { padding: 24px; text-align: center; color: #626b77; }
+    @media (max-width: 800px) {
+      .videos { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Translating Language Prompts into Reliable Robot Programs</h1>
+    <p>Through Autonomous World Exploration</p>
+    <p>University of Cincinnati</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Project Overview</h2>
+      <p>
+        This project investigates prompt-driven robot programming,
+        autonomous world exploration, and sensing-based workflow repair.
+        Physics-based simulation supports the generation and review of
+        robot workflows before physical execution.
+      </p>
+    </section>
+
+    <section>
+      <h2>Video Demonstrations</h2>
+
+      <div class="videos">
+        <article>
+          <h3>Robotic Pipetting</h3>
+          <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID_1"
+            title="Robotic pipetting demonstration"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="encrypted-media; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+          <p>Describe the pipetting demonstration here.</p>
+        </article>
+
+        <article>
+          <h3>Workflow Monitoring and Repair</h3>
+          <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID_2"
+            title="Workflow monitoring and repair demonstration"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="encrypted-media; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+          <p>Describe the workflow-repair demonstration here.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Software and Datasets</h2>
+      <p>Software, datasets, and documentation will be linked here.</p>
+    </section>
+
+    <section>
+      <h2>Publications</h2>
+      <p>Add related publications and presentation materials here.</p>
+    </section>
+  </main>
+
+  <footer>University of Cincinnati</footer>
+</body>
+</html>
