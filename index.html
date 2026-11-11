@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- EDIT: Browser-tab title -->
+  <title>Autonomous World Exploration for Robot Programming</title>
+
+  <meta name="description"
+    content="Research on prompt-driven robot programming, autonomous world
+    exploration, sensing-based monitoring, and workflow repair.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #242832;
+      background: #ffffff;
+      line-height: 1.75;
+    }
+
+    a {
+      color: #2363a5;
+    }
+
+    .container {
+      width: min(1100px, calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+    .page-header {
+      padding: 70px 0 55px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 auto 25px;
+      max-width: 1050px;
+      font-size: clamp(30px, 4vw, 48px);
+      font-weight: 800;
+      line-height: 1.18;
+      letter-spacing: -1px;
+    }
+
+    .team {
+      margin: 18px 0 4px;
+      font-size: 20px;
+      color: #2363a5;
+    }
+
+    .affiliation {
+      margin: 0;
+      font-size: 18px;
+      color: #697280;
+    }
+
+    .page-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .page-links a {
+      padding: 9px 21px;
+      border-radius: 25px;
+      color: white;
+      background: #303642;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .page-links a:hover {
+      background: #2363a5;
+    }
+
+    section {
+      padding: 48px 0;
+    }
+
+    .abstract-section {
+      background: #f6f7f9;
+    }
+
+    .abstract-content {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      margin: 0 0 30px;
+      text-align: center;
+      font-size: 32px;
+      line-height: 1.3;
+    }
+
+    h2::after {
+      content: "";
+      display: block;
+      width: 58px;
+      height: 3px;
+      margin: 15px auto 0;
+      background: linear-gradient(90deg, #d982d4, #ee7185);
+    }
+
+    .abstract-content p {
+      margin: 0;
+      font-size: 18px;
+      color: #606a78;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 35px 30px;
+    }
+
+    .video-item h3 {
+      margin: 0 0 14px;
+      text-align: center;
+      font-size: 21px;
+    }
+
+    .video-frame {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      min-height: 200px;
+      overflow: hidden;
+      border-radius: 8px;
+      background: #e9edf2;
+    }
+
+    .video-frame iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .video-item p {
+      margin: 12px 0 0;
+      color: #697280;
+      font-size: 16px;
+    }
+
+    .resources-section {
+      background: #f6f7f9;
+      text-align: center;
+    }
+
+    .resources-section p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 18px;
+      color: #606a78;
+    }
+
+    figure {
+      max-width: 950px;
+      margin: 0 auto;
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    figcaption {
+      margin-top: 14px;
+      text-align: center;
+      font-size: 16px;
+      color: #697280;
+    }
+
+    footer {
+      padding: 28px 24px;
+      text-align: center;
+      color: #697280;
+      font-size: 14px;
+    }
+
+    @media (max-width: 850px) {
+      .video-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .page-header {
+        padding: 45px 0 35px;
+      }
+
+      section {
+        padding: 36px 0;
+      }
+
+      .abstract-content p {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- PAGE TITLE AND PROJECT TEAM -->
+  <header class="page-header">
+    <div class="container">
+
+      <!-- EDIT: Main title displayed on the webpage -->
+      <h1>
+        Translating Language Prompts into Reliable Robot Programs
+        Through Autonomous World Exploration
+      </h1>
+
+      <!-- EDIT: Project team names -->
+      <p class="team">
+        Xiaodong Jia · Janet Dong · Hanxun Jin
+      </p>
+
+      <p class="affiliation">
+        University of Cincinnati
+      </p>
+
+      <nav class="page-links" aria-label="Page sections">
+        <a href="#abstract">Overview</a>
+        <a href="#demonstrations">Videos</a>
+        <a href="#resources">Resources</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ABSTRACT -->
+  <section class="abstract-section" id="abstract">
+    <div class="container">
+      <div class="abstract-content">
+
+        <h2>Abstract</h2>
+
+        <!-- EDIT: Replace this paragraph with your approved overview -->
+        <p>
+          This project investigates a reasoning platform that translates
+          natural-language instructions into robot workflows through
+          autonomous world exploration. Physics-based simulation supports
+          the learning and evaluation of action models, while sensing-based
+          predicate monitoring identifies discrepancies during execution.
+          Workflow repair introduces corrective actions to accommodate
+          changes in object poses and equipment states. The technology
+          will be evaluated through robotic pipetting, material handling,
+          and bioprinting applications.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO DEMONSTRATIONS -->
+  <section id="demonstrations">
+    <div class="container">
+
+      <h2>Video Demonstrations</h2>
+
+      <div class="video-grid">
+
+        <!-- VIDEO 1 -->
+        <article class="video-item">
+          <h3>Robotic Pipetting</h3>
+
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/VIDEO_ID_1"
+              title="Robotic pipetting demonstration"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="encrypted-media; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <p>
+            Add a short description of the pipetting demonstration.
+          </p>
+        </article>
+
+        <!-- VIDEO 2 -->
+        <article class="video-item">
+          <h3>World Simulation and Exploration</h3>
+
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/VIDEO_ID_2"
+              title="World simulation and exploration demonstration"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="encrypted-media; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <p>
+            Add a short description of the world exploration demonstration.
+          </p>
+        </article>
+
+        <!-- VIDEO 3 -->
+        <article class="video-item">
+          <h3>Sensing-Based Execution Monitoring</h3>
+
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/VIDEO_ID_3"
+              title="Execution monitoring demonstration"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="encrypted-media; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <p>
+            Add a short description of predicate monitoring.
+          </p>
+        </article>
+
+        <!-- VIDEO 4 -->
+        <article class="video-item">
+          <h3>Robot Workflow Repair</h3>
+
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/VIDEO_ID_4"
+              title="Robot workflow repair demonstration"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="encrypted-media; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <p>
+            Add a short description of the corrective actions.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- OPTIONAL: Add a project figure section above this line -->
+
+  <!-- RESOURCES -->
+  <section class="resources-section" id="resources">
+    <div class="container">
+
+      <h2>Software and Datasets</h2>
+
+      <p>
+        Software, datasets, publications, and documentation will be
+        linked here as they become available.
+      </p>
+
+    </div>
+  </section>
+
+  <footer>
+    University of Cincinnati
+  </footer>
+
+</body>
+</html>
