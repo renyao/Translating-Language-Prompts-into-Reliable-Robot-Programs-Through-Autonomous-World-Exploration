@@ -57,38 +57,8 @@
       color: #697280;
     }
 
-    .page-links {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 25px;
-    }
-
-    .page-links a {
-      padding: 9px 21px;
-      border-radius: 25px;
-      color: white;
-      background: #303642;
-      text-decoration: none;
-      font-size: 16px;
-    }
-
-    .page-links a:hover {
-      background: #2363a5;
-    }
-
     section {
       padding: 48px 0;
-    }
-
-    .abstract-section {
-      background: #f6f7f9;
-    }
-
-    .abstract-content {
-      max-width: 850px;
-      margin: 0 auto;
     }
 
     h2 {
@@ -105,12 +75,6 @@
       height: 3px;
       margin: 15px auto 0;
       background: linear-gradient(90deg, #d982d4, #ee7185);
-    }
-
-    .abstract-content p {
-      margin: 0;
-      font-size: 18px;
-      color: #606a78;
     }
 
     .video-grid {
@@ -135,6 +99,22 @@
       background: #e9edf2;
     }
 
+    .video-placeholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 24px;
+      text-align: center;
+      color: #697280;
+    }
+
+    .video-placeholder strong {
+      font-size: 30px;
+      color: #303642;
+    }
+
     .video-frame iframe {
       position: absolute;
       inset: 0;
@@ -147,18 +127,6 @@
       margin: 12px 0 0;
       color: #697280;
       font-size: 16px;
-    }
-
-    .resources-section {
-      background: #f6f7f9;
-      text-align: center;
-    }
-
-    .resources-section p {
-      max-width: 800px;
-      margin: 0 auto;
-      font-size: 18px;
-      color: #606a78;
     }
 
     figure {
@@ -199,16 +167,13 @@
         padding: 36px 0;
       }
 
-      .abstract-content p {
-        font-size: 17px;
-      }
     }
   </style>
 </head>
 
 <body>
 
-  <!-- PAGE TITLE AND PROJECT TEAM -->
+  <!-- PAGE TITLE -->
   <header class="page-header">
     <div class="container">
 
@@ -218,20 +183,9 @@
         Through Autonomous World Exploration
       </h1>
 
-      <!-- EDIT: Project team names -->
-      
 
-      
-
-      <nav class="page-links" aria-label="Page sections">
-        <a href="#abstract">Overview</a>
-        <a href="#demonstrations">Videos</a>
-        <a href="#resources">Resources</a>
-      </nav>
-
-    </div>
+</div>
   </header>
-
 
   <!-- VIDEO DEMONSTRATIONS -->
   <section id="demonstrations">
@@ -243,87 +197,100 @@
 
         <!-- VIDEO 1 -->
         <article class="video-item">
-          <h3>Robotic Pipetting</h3>
-
+          <h3>Figure 3: Video Demo: World Simulation of Robot Pipetting</h3>
           <div class="video-frame">
             <iframe
-            src="https://www.youtube.com/watch?v=I4UxpsCUc4A"
-            title="Figure 3: Video Demo: Robotic pipetting"
-            loading="lazy"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allow="encrypted-media; picture-in-picture; web-share"
-            allowfullscreen>
+              src="https://www.youtube.com/embed/wGSDofUuw1o"
+              title="Figure 3: Video Demo: World Simulation of Robot Pipetting"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
             </iframe>
           </div>
-          <p>Figure 2: Robot pipetting video demonstration</p>
+          <p><a href="https://youtu.be/wGSDofUuw1o" target="_blank" rel="noopener">Watch on YouTube</a></p>
         </article>
 
         <!-- VIDEO 2 -->
         <article class="video-item">
-          <h3>World Simulation and Exploration</h3>
-
+          <h3>Figure 5: Video Demo: Human Digital Twin and Robot Digital Twin</h3>
           <div class="video-frame">
-            <iframe src="https://www.youtube.com/embed/wGSDofUuw1o" title="World simulation and exploration demonstration" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="encrypted-media; picture-in-picture; web-share" allowfullscreen="">
+            <iframe
+              src="https://www.youtube.com/embed/EKxf9TTucWg"
+              title="Figure 5: Video Demo: Human Digital Twin and Robot Digital Twin"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
             </iframe>
           </div>
-
-          <p>
-            Add a short description of the world exploration demonstration.
-          </p>
+          <p><a href="https://youtu.be/EKxf9TTucWg" target="_blank" rel="noopener">Watch on YouTube</a></p>
         </article>
 
         <!-- VIDEO 3 -->
         <article class="video-item">
-          <h3>Sensing-Based Execution Monitoring</h3>
-
-          <div class="video-frame">
-            <iframe src="https://www.youtube.com/embed/wGSDofUuw1o" title="Execution monitoring demonstration" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="encrypted-media; picture-in-picture; web-share" allowfullscreen="">
-            </iframe>
+          <h3>Figure 5: Video Demo: Equipment Digital Twin</h3>
+          <!-- Replace this placeholder with an embedded video when its URL is available. -->
+          <div class="video-frame video-placeholder" role="img" aria-label="Equipment digital twin video to be added">
+            <strong>TBD</strong>
+            <span>Equipment digital twin video to be added.</span>
           </div>
-
-          <p>
-            Add a short description of predicate monitoring.
-          </p>
         </article>
 
         <!-- VIDEO 4 -->
         <article class="video-item">
-          <h3>Robot Workflow Repair</h3>
-
+          <h3>Figure 14: Video Demo: Hand–Probe–Belly Interaction Tracking Using Machine Vision</h3>
           <div class="video-frame">
-            <iframe src="https://www.youtube.com/embed/zWUqdssyfUk" title="Robot workflow repair demonstration" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="encrypted-media; picture-in-picture; web-share" allowfullscreen="">
+            <iframe
+              src="https://www.youtube.com/embed/RF9x71pytaE"
+              title="Figure 14: Video Demo: Hand–Probe–Belly Interaction Tracking Using Machine Vision"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
             </iframe>
           </div>
+          <p><a href="https://youtu.be/RF9x71pytaE" target="_blank" rel="noopener">Watch on YouTube</a></p>
+        </article>
 
-          <p>
-            Add a short description of the corrective actions.
-          </p>
+        <!-- VIDEO 5 -->
+        <article class="video-item">
+          <h3>Figure 14: Video Demo: Real-Time Object Pose Tracking</h3>
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/zWUqdssyfUk"
+              title="Figure 14: Video Demo: Real-Time Object Pose Tracking"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <p><a href="https://youtu.be/zWUqdssyfUk" target="_blank" rel="noopener">Watch on YouTube</a></p>
+        </article>
+
+        <!-- VIDEO 6 -->
+        <article class="video-item">
+          <h3>Figure 19: Interview at Robot+AI Summit 2026</h3>
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/Kp6kna4OVzM"
+              title="Figure 19: Interview at Robot+AI Summit 2026"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <p><a href="https://youtu.be/Kp6kna4OVzM" target="_blank" rel="noopener">Watch on YouTube</a></p>
         </article>
 
       </div>
     </div>
   </section>
 
-  <!-- OPTIONAL: Add a project figure section above this line -->
-
-  <!-- RESOURCES -->
-  <section class="resources-section" id="resources">
-    <div class="container">
-
-      <h2>Software and Datasets</h2>
-
-      <p>
-        Software, datasets, publications, and documentation will be
-        linked here as they become available.
-      </p>
-
-    </div>
-  </section>
-
   <footer>
     University of Cincinnati
   </footer>
-
-
 
 </body></html>
